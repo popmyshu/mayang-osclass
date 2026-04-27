@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["php83", "php83Extensions.mysqli", "php83Extensions.pdo_mysql", "php83Extensions.gd", "php83Extensions.mbstring", "php83Extensions.curl", "php83Extensions.xml", "php83Extensions.zip", "php83Extensions.intl", "apacheHttpd"]
+
+[phases.install]
+cmds = ["cp config-sample.php config.php", "echo 'ServerName localhost' >> /etc/apache2/apache2.conf", "a2enmod rewrite"]
+
+[start]
+cmd = "apache2-foreground"
