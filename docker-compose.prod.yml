@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: mayang_info
+      MYSQL_USER: osclass
+      MYSQL_PASSWORD: osclass_pass
+      MYSQL_ROOT_PASSWORD: root_pass_123
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  php:
+    image: php:8.1-apache
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      DB_NAME: mayang_info
+      DB_USER: osclass
+      DB_PASSWORD: osclass_pass
+      DB_HOST: db
+    depends_on:
+      - db
+
+volumes:
+  mysql_data:

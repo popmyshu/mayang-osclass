@@ -1,0 +1,6 @@
+/.git
+*.log
+oc-content/uploads/temp/*
+oc-content/downloads/oc-temp/*
+config.php
+.DS_Store

@@ -1,0 +1,106 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 350px;
+    min-width: 330px;
+    margin: auto;
+}
+
+.form-select {
+    height: 1.25;
+    line-height: 1.25;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[name="username"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.alert .ico-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.alert-ok {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc
+}
+
+.alert-ok a {
+    color: #0c4128
+}
+
+.alert-warning {
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5
+}
+
+.alert-warning a {
+    color: #523e02
+}
+
+.alert-error {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7
+}
+
+.alert-error a {
+    color: #6a1a21
+}
+
+.ico-close {
+    cursor: hand;
+    float: right;
+}
+
+/* RECOVER 
+ ****************************/
+body.recover #nav,
+body.forgot #nav {
+    padding-top: 0px;
+    text-align: right;
+    padding-right: 5px;
+    clear: both;
+}
+
+body.recover .submit,
+body.forgot .submit {
+    width: 305px;
+    height: 45px;
+}
+
+body.recover .submit input,
+body.forgot .submit input {
+    width: 300px;
+}
